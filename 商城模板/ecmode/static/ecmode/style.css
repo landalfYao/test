@@ -1,0 +1,97 @@
+body{
+  margin: 0;
+}
+div,span,p,h1,h2,h3,h4,h5{
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+.el-header {
+  background-color: #434343;
+  color: #fff;
+}
+
+.el-aside {
+  background-color: #434343;
+  color: #333;
+}
+
+.el-main {
+  background-color: #E9EEF3;
+  color: #333;
+  overflow-y: scroll;
+}
+
+body > .el-container {
+  margin-bottom: 40px;
+}
+
+.el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+  line-height: 260px;
+}
+
+.el-container:nth-child(7) .el-aside {
+  line-height: 320px;
+}
+
+/*主标题*/
+.font-el{
+  font-size: 20px
+}
+.font-lg{
+  font-size: 18px;
+}
+.font-md{
+  font-size: 16px
+}
+.font-sm{
+  font-size: 14px
+}
+.font-es{
+  font-size: 13px
+}
+.font-xs{
+  font-size: 12px
+}
+.flex-between{
+  display: flex;
+  justify-content: space-between
+}
+
+.logo{
+  margin-top: 10px
+}
+
+.avatar-panel{
+  float: right;
+  padding-left: 20px;
+  border-left: 1px solid #e1e1e1;
+  line-height: 60px;
+  color:#ffffff
+}
+.avatar{
+  width: 40px;
+  height: 40px;
+  line-height: 60px;
+  font-size: 30px
+}
+.panel{
+  border-radius: 15px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 2px 2px 2px #d1d1d1;
+}
+.padding-sd{
+  padding: 20px;
+}
+.color-def{
+  color: #888;
+}
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+.clearfix{
+  clear: both;
+}

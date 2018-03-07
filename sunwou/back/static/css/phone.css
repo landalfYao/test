@@ -1,0 +1,159 @@
+.phone{
+  height: 600px;
+  width: 320px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 2px 2px 2px #d1d1d1;
+  overflow: hidden;
+}
+.phone-header{
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-header .t1{
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+  margin-right: 10px
+}
+.phone-header .t2{
+  width: 40px;
+  height: 6px;
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+}
+.phone-main{
+  width: 337px;
+  height: 500px;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-left: none;
+}
+.wxmain{
+  width: 337px;
+  height: 410px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #f1f1f1
+}
+.phone-footer{
+
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.phone-footer .phone-btn{
+  height: 28px;
+  width: 55px;
+  border: 1px solid #d1d1d1;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.titleBar{
+  width: 100%;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+.el-carousel__item h3 {
+  color: #475669;
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 150px;
+  margin: 0;
+}
+.main-footer{
+  height: 50px;
+  overflow-y: hidden
+}
+.config-panel-group{
+  float: left;
+  width: 55%;
+  margin-left: 20px;
+}
+.gc-title{
+  width: 100%;
+  background: #fff;
+  line-height: 40px;
+  border-bottom: 1px #e1e1e1 solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 10px 10px 0 0;
+  color: #888
+}
+.gc-body{
+  width: 100%;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 2px 2px #d1d1d1;
+  padding: 15px
+}
+.avatar-uploader{
+  width: 32px;
+  height: 32px;
+  display: block;
+  overflow: hidden;
+  border: 1px dashed #d9d9d9;
+  border-radius: 3px;
+  display: inline-block
+}
+.avatar-uploader .el-upload {
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.el-upload__input{
+  width: 30px;
+  height: 30px;
+  opacity: 0
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  display: block;
+  overflow-y: hidden
+}
+.update-log-panel{
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 5px
+}
+.update-log{
+  padding: 20px
+}
+.carousel-indicators{
+  bottom: 0
+}
+.icon-table{
+  width: 100%;
+  max-width: 550px
+}
+.icon-table thead tr th{
+  line-height: 35px;
+  text-align: center;
+  background: #E6EDF5
+
+}
+.icon-table tbody tr td{
+  text-align: center;
+  padding: 5px;
+}
+.icon-table tbody tr:hover{
+  background: #f2f2f2
+}

@@ -1,0 +1,250 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+h1,h2,h3,h4,h5,span,div,p,a{
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+.sw-container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #f3f3f3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sw-header{
+  height: 60px;
+  background: #fff;
+  padding: 0 15px;
+  position: absolute;
+  left: 233px;
+  top: 0
+}
+.sw-nav{
+  width: 250px;
+  overflow-y: scroll;
+  background: #2C2B2B;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo{
+  color: #fff;
+  padding:0 20px;
+  font-size: 24px;
+  line-height: 60px;
+}
+.el-menu{
+  background: #2C2B2B
+}
+.el-menu-item, .el-submenu__title{
+  color: #fff
+}
+.inline-block{
+  display: inline-block
+}
+.bar-btn{
+  line-height: 60px;
+  font-size: 18px;
+  color: #2C2B2B;
+  cursor: pointer;
+}
+.notice-btn{
+  margin-left: 50px;
+}
+.notice{
+  margin-left: 3px;
+  padding: 3px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.font-18{
+  font-size: 18px
+}
+.notice-primary{
+  background: #00CC66;
+  color:#fff;
+}
+.user-panel{
+  margin-top: 15px;
+}
+.margin-left-10{
+  margin-left: 10px
+}
+.sw-main{
+  position: absolute;
+  left: 233px;
+  top: 60px;
+  background: #f3f3f3;
+  overflow-y: scroll;
+  padding: 20px
+}
+.component-panel{
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f3f3f3;
+  margin-top: 15px;
+}
+.component-panel .titlebar{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  clear: both;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d1d1d1
+}
+.mzs-panel{
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #e1e1e1
+}
+.mzs-bg{
+  height: 110px;
+  border-radius: 15px 15px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+.mzs-bg .mzs-avatar{
+  display: block;
+  border: 5px solid #fff;
+  border-radius: 100px;
+  margin: auto;
+  position: relative;
+  top: 40px
+}
+.mzs-content{
+  padding: 5px 15px 15px 5px;
+  background: #fff;
+  z-index: 10
+}
+.mzs-content .titem{
+  text-align: center;
+  line-height: 30px;
+}
+.mzs-btn-group{
+  background: #fff;
+  border-radius: 0 0 15px 15px;
+  border-top:1px solid #e1e1e1;
+  display: flex;
+  justify-content: center;
+}
+.mzs-btn-group .item{
+  width: 33.33%;
+  text-align: center;
+  padding: 10px 0;
+  line-height: 25px;
+  cursor: pointer;
+}
+.mzs-btn-group .item:first-child div{
+  border-left: none
+}
+.mzs-btn-group .item div{
+  border-left: 1px solid #e1e1e1
+}
+.sw-fixed{
+  position: fixed;
+  top: 60px;
+  left: 233px;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-top: 1px solid #e1e1e1;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.edit{
+  display: inline-block;
+  margin-left:30px
+}
+.mzsItemPanel{
+  padding:30px;
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  align-items: center
+}
+
+.panel-start {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+}
+
+.panel-end {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: wrap;
+}
+
+.panel-between {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.panel-center {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.panel-around {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.panel-initial {
+  display: flex;
+  justify-content: initial;
+  flex-flow: wrap;
+}
+
+.item-center {
+  align-items: center;
+}
+.price{
+  font-size: 18px;
+  font-weight: bold;
+  color: #CC0033
+}
+.oprice{
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+.photoUpload{
+  width:150px;
+  height: 150px;
+  overflow: hidden
+}
+.photoUpload:hover{
+  text-decoration: none;
+}
+.photoUpload span{
+  display: block;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  font-size: 50px;
+  border: 1px dotted #2C2B2B;
+  border-radius: 10px
+}
+.photoUpload input{
+  width: 150px;
+  height: 150px;
+  margin-top:-150px;
+  opacity: 0
+}

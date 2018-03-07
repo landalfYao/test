@@ -1,0 +1,282 @@
+body {
+	font-family: "微软雅黑";
+	padding: 0;
+	margin: 0;
+}
+
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.col-lg-12,
+.col-lg-3,
+.col-lg-4,
+.col-xs-12 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/*导航*/
+
+.navbar-default {
+	background-color: #FFFFFF;
+	border: 0px transparent solid;
+}
+
+.navbar {
+	border-radius: 0px;
+	margin-bottom: 0px;
+	padding: 20px 0;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	color: #52AFB3;
+	background-color: transparent;
+	border-bottom: 2px #52AFB3 solid;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #52AFB3;
+	background-color: transparent;
+	border-bottom: 2px #52AFB3 solid;
+}
+
+.navbar-brand {
+	float: right;
+	height: 0px;
+	padding: 0 60px 0 0;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.navbar-nav>li>a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 20px;
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 0;
+	margin: 0 10px;
+}
+
+.h_line {
+	border-bottom: 1px solid #DDDDDD;
+	background: rgba(255, 255, 255, 0.85);
+}
+
+button {
+	align-items: flex-start;
+	text-align: center;
+	cursor: default;
+	color: #FFFFFF;
+	background-color: #8F8480;
+	box-sizing: border-box;
+	padding: 5px 15px;
+	border-width: 0px;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+
+/*页尾*/
+
+footer {
+	background-color: #29190D;
+	padding: 30px;
+	margin-top: -1px;
+}
+
+footer a {
+	border-left: 2px #8D7765 solid;
+	color: #8D7765;
+	padding: 0px 10px;
+	position: relative;
+	top: 5px;
+}
+
+footer a:link,
+a:visited,
+footer p {
+	color: #8D7765;
+}
+
+footer a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+footer p {
+	padding-top: 10px;
+}
+
+
+/*表单*/
+
+.ftxt {
+	color: #FFFFFF;
+	line-height: 250%;
+	font-size: 18px;
+	padding: 10%;
+}
+
+.ftxt span {
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.ftxt strong {
+	font-size: 20px;
+}
+
+.form-bg2 {
+	background-image: url(../image/cloud.png);
+	background-size: cover;
+}
+
+.formtxt {
+	border-left: 2px #FFFFFF solid;
+	padding-left: 20px;
+	margin-bottom: 50px;
+}
+
+.formtxt span {
+	color: #4E4E4E;
+	font-size: 20px;
+}
+
+.fcont {
+	color: #FFFFFF;
+	float: right;
+	padding: 100px 80px;
+}
+
+.fcont p,
+.fcont h2 {
+	padding-bottom: 15px;
+}
+
+.form-group {
+	margin: 25px 0;
+}
+
+/*微博微信返回顶部*/
+
+#moquu_top,
+#moquu_wxin,
+#moquu_wshare {
+	z-index: 2;
+	width: 72px;
+	height: 72px;
+	right: 0px;
+	position: fixed;
+	cursor: pointer;
+	_position: absolute;
+	_bottom: auto;
+	_top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)))
+}
+
+
+/*电话效果*/
+
+#moquu_wxin {
+	bottom: 130px;
+	right: -10px;
+}
+
+#moquu_wxin a {
+	background: url(../image/tel.png) no-repeat rgba(0, 0, 0, 0.5) center center;
+	right: 0;
+	float: left;
+	width: 50px;
+	height: 50px;
+	text-indent: -9999px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#moquu_wxin a:hover {
+	background: url(../image/tel.png) no-repeat #4C4C4C center center;
+}
+
+
+/*微信效果*/
+
+#moquu_wshare {
+	bottom: 80px;
+	right: -10px;
+}
+
+#moquu_wshare a {
+	background: url(../image/ewm.png) no-repeat rgba(0, 0, 0, 0.5) center;
+	width: 50px;
+	height: 50px;
+	right: 0;
+	float: left;
+	text-indent: -9999px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#moquu_wshare a:hover {
+	background: url(../image/ewm.png) no-repeat #4C4C4C center;
+}
+
+
+/*电话微信弹出框效果*/
+
+.moquu_wxin,
+.moquu_wshare {
+	position: relative;
+	z-index: 2
+}
+
+.moquu_wxin a:hover .moquu_wxinh,
+.moquu_wshare a:hover .moquu_wshareh {
+	display: block
+}
+
+.moquu_wxin .moquu_wxinh {
+	position: absolute;
+	display: none;
+	right: 74px;
+	bottom: 20px;
+	width: 224px;
+	height: 44px;
+	background: url(../image/dianhua.png) 0 0 no-repeat;
+	border-radius: 4px 0 0 4px;
+}
+
+.moquu_wshare .moquu_wshareh {
+	position: absolute;
+	display: none;
+	right: 74px;
+	bottom: -65px;
+	width: 160px;
+	height: 160px;
+	background: url(../image/weixinerweima.png) no-repeat
+}
+
+
+/*返回顶部效果*/
+
+#topcontrol {
+	background: #4c4c4c;
+	height: 50px;
+	width: 50px;
+	border-radius: 4px;
+	right: 10px;
+}

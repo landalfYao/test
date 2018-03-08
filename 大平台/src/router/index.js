@@ -22,6 +22,7 @@ import uiConsole from '../components/ui_page/console/ui_console'
 import uiConsoleOverview from '../components/ui_page/console/ui_console_overview'
 import uiConsoleMiniprogram from '../components/ui_page/console/ui_console_miniprogram'
 import uiConsoleMiniprogramCreate from '../components/ui_page/console/ui_console_miniprogram_create'
+import uiConsoleMiniprogramModal from '../components/ui_page/console/ui_console_miniprogram_modal'
 import uiConsoleGallery from '../components/ui_page/console/ui_console_gallery'
 
 Vue.use(Router)
@@ -37,6 +38,7 @@ export default new Router({
         {path:'/ui_console_overview',name:'uiConsoleOverview',component:uiConsoleOverview},
         {path:'/ui_console_miniprogram',name:'uiConsoleMiniprogram',component:uiConsoleMiniprogram},
         {path:'/ui_console_miniprogram_create',name:'uiConsoleMiniprogramCreate',component:uiConsoleMiniprogramCreate},
+        {path:'/ui_console_miniprogram_modal',name:'uiConsoleMiniprogramModal',component:uiConsoleMiniprogramModal},
         {path:'/ui_console_gallery',name:'uiConsoleGallery',component:uiConsoleGallery}
       ]}
     ]},

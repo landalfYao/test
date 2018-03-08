@@ -147,3 +147,14 @@ body,h1,h2,h3,h4,h5,p,div,span,i,a{
 .fp-over:hover{
   color: #00CCFF
 }
+.pull-right{
+  float: right;
+}
+.pull-left{
+  float: left;
+}
+.font-main{
+  font-size: 16px;
+  font-weight: bold;
+  color: #464c5b
+}

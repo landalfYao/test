@@ -37,7 +37,8 @@ export default {
         ]},
         {icon:'link',label:'小程序',children:[
           {label:'小程序信息',path:'/ui_console_miniprogram'},
-          {label:'创建小程序',path:'/ui_console_miniprogram_create'}
+          {label:'创建小程序',path:'/ui_console_miniprogram_create'},
+          {label:'小程序模板',path:'/ui_console_miniprogram_modal'}
         ]},
         {icon:'images',label:'文件库',children:[
           {label:'文件管理',path:'/ui_console_gallery'},

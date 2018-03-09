@@ -39,6 +39,11 @@
   height: 520px;
   background-color: #292c36;
 }
+.ui-home-function .show-function >.title{
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center
+}
 .ui-home-function .idu-item{
   background-size:cover;
   background-position: center;

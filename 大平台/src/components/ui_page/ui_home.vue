@@ -26,7 +26,7 @@
               <img :src="iconList[index].image"  width="300px" style="margin-top:120px">
             </div>
             <div style="margin-left:300px;margin-top:120px">
-              <div v-html="iconList[index].content" style="width:300px"></div>
+              <div v-html="iconList[index].content" style="width:400px"></div>
             </div>
           </div>
         </div>
@@ -34,13 +34,32 @@
       </div>
       <div class="panel ui-home-function">
         <div class="title">各行各业的小程序模板</div>
-        <div class="width-1200 margin-center panel-around" style="margin-top:30px">
+        <div class="width-1200 margin-center panel-around item-center" style="margin-top:30px">
           <div class="idu-item" v-for="(item,index) in industryList" :key="index" :style="'background-image:url('+item.url+')'">
             <div class="id-panel">
               <div class="title">{{item.title}}</div>
               <div class="text">{{item.text}}</div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="panel ui-home-function">
+        <div style="background:url(/static/img/bg2.jpg) ;background-position:center;background-size: cover;background-attachment:fixed;">
+          <div class="show-function"  style="padding:50px;background-color:rgba(41,44,54,0.8)">
+            <div class="title">小程序核心场景</div>
+            <div class="width-1200 margin-center panel-around item-center" style="margin-top:30px;padding-top:30px">
+              <div v-for="(item,index) in sceneList" :key="index" style="width:20%;text-align:center;padding:20px" >
+                <div><img :src="item.url" width="40px" alt=""></div>
+                <div class="font-white" style="font-size:16px;margin-top:5px">{{item.title}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel ui-home-function">
+        <div class="title">热门小程序</div>
+        <div class="width-1200 margin-center panel-around item-center" style="margin-top:30px">
+          <div></div>
         </div>
       </div>
     </div>
@@ -58,24 +77,33 @@ export default {
       iconListFlag:0,
       carouselCurrent:0,
       iconList:[
-        {icon:'/static/img/function/f1.png',selectedIcon:'/static/img/function/q1.png',label:'附近',image:'/static/img/function/wxpay.png',
-          content:'<div style="width:300px"><div style="font-size:18px;color:#ffffff">附近的小程序</div></div>'},
-        {icon:'/static/img/function/f2.png',selectedIcon:'/static/img/function/q2.png',label:'卡券',image:'/static/img/function/wxpays.png',content:'fgsfdsf'},
-        {icon:'/static/img/function/f3.png',selectedIcon:'/static/img/function/q3.png',label:'扫码',image:'/static/img/function/wxpays.png',content:'dsfdsfsd'},
+        {icon:'/static/img/function/f1.png',selectedIcon:'/static/img/function/q1.png',label:'附近',image:'/static/img/function/map.png',
+          content:'<div style="width:400px"><div style="font-size:25px;color:#ffffff">附近的小程序</div><div style="font-size:16px;color:#e1e1e1;line-height:30px">帮助商户快速、低门槛地在指定地点展示小程序，以方便被周围的用户找到并使用。“附近的小程序”是一种典型的线下场景集合。你的附近，可能会出现：公众号关联的“门店小程序”和普通小程序。</div></div>'},
+        {icon:'/static/img/function/f2.png',selectedIcon:'/static/img/function/q2.png',label:'卡券',image:'/static/img/function/bao.png',
+          content:'<div style="width:400px"><div style="font-size:25px;color:#ffffff">微信卡包</div><div style="font-size:16px;color:#e1e1e1;line-height:30px">主要是增加了卡券使用的便捷和易用性,管理银行卡、优惠券等信息。将原来存在于各服务商公众号或服务号里面的优惠券、打折券等信息，从更加底层的公众号/服务号菜单中提取出来，集中在卡券菜单里显示</div></div>'},
+        {icon:'/static/img/function/f3.png',selectedIcon:'/static/img/function/q3.png',label:'扫码',image:'/static/img/function/wxpays.png',content:'dsfdsfsd',
+          content:'<div style="width:400px"><div style="font-size:25px;color:#ffffff">微信卡包</div><div style="font-size:16px;color:#e1e1e1;line-height:30px">通过微信扫描二维码跳转到了我指定的小程序页面,使小程序的线下使用更加灵活。</div></div>'},
         {icon:'/static/img/function/f4.png',selectedIcon:'/static/img/function/q4.png',label:'支付',image:'/static/img/function/wxpays.png',content:'sdfdsfsd'},
         {icon:'/static/img/function/f5.png',selectedIcon:'/static/img/function/q5.png',label:'生物识别',image:'/static/img/function/wxpays.png',content:'sdfdsf'},
         {icon:'/static/img/function/f6.png',selectedIcon:'/static/img/function/q6.png',label:'数据分析',image:'/static/img/function/wxpays.png',content:'sdfsdfsdf'}
       ],
       industryList:[
-        {url:'/static/img/other/b1.png',title:'O2O 电商',text:'线上运营、线下消费'},
-        {url:'/static/img/other/b2.png',title:'O2O 电商',text:'线上运营、线下消费'},
-        {url:'/static/img/other/b1.png',title:'O2O 电商',text:'线上运营、线下消费'},
-        {url:'/static/img/other/b1.png',title:'O2O 电商',text:'线上运营、线下消费'},
-        {url:'/static/img/other/b1.png',title:'O2O 电商',text:'线上运营、线下消费'},
-        {url:'/static/img/other/b1.png',title:'O2O 电商',text:'线上运营、线下消费'},
-        {url:'/static/img/other/b1.png',title:'O2O 电商',text:'线上运营、线下消费'},
-        {url:'/static/img/other/b1.png',title:'O2O 电商',text:'线上运营、线下消费'}
-      ]
+        {url:'/static/img/function/h1.png',title:'酒店民宿',text:'打通线上线下预约'},
+        {url:'/static/img/function/h2.jpg',title:'堂食餐饮',text:'到店消费，智慧点餐'},
+        {url:'/static/img/function/h3.jpg',title:'新闻论坛',text:'将资源聚合以全新的形式提供资讯服务'},
+        {url:'/static/img/function/h4.jpg',title:'旅游',text:'为旅游行业客户提供高效的特色推荐功能'},
+        {url:'/static/img/function/h5.jpg',title:'家居',text:'低成本助商家打造购物社交化平台'},
+        {url:'/static/img/function/h6.jpg',title:'摄影',text:'线上运营、线下消费'},
+        {url:'/static/img/function/h7.jpg',title:'同城',text:'租房、二手房、二手车、宠物等行业小程序'},
+        {url:'/static/img/function/h8.jpg',title:'预约',text:'线上运营、线下消费'}
+      ],
+      sceneList:[
+        {url:'/static/img/function/l1.png',title:'分享到群'},{url:'/static/img/function/l2.png',title:'线下扫码'},{url:'/static/img/function/l3.png',title:'微信搜索'},
+        {url:'/static/img/function/l4.png',title:'聊天顶部'},{url:'/static/img/function/l5.png',title:'推荐给好友'},
+        {url:'/static/img/function/l6.png',title:'附近的小程序'},{url:'/static/img/function/l7.png',title:'支付完成页'},{url:'/static/img/function/l8.png',title:'小程序列表'},
+        {url:'/static/img/function/l9.png',title:'公众号主页'},{url:'/static/img/function/l10.png',title:'公众号文章'},
+      ],
+
     }
   },
   mounted () {

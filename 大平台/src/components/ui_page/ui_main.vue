@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="clearfix"></div>
-        <div class="record-number">杭州双沃网络科技开发有限公司©2017 双沃科技 浙ICP备16110707号-1</div>
+        <div class="record-number">杭州双沃网络科技有限公司©2017 双沃科技 浙ICP备16110707号-1</div>
       </div>
     </div>
   </transition>
